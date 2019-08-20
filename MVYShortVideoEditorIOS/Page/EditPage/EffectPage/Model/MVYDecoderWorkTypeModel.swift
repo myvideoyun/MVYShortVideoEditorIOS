@@ -12,6 +12,7 @@ enum MVYDecoderWokType: Int {
     case normal // 正常解码
     case reverse // 倒序解码
     case slow // 慢速解码
+    case fast // fast play
 }
 
 class MVYDecoderWorkTypeModel {

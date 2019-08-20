@@ -58,6 +58,11 @@
     [self.videoPlayer startSlowPlayWithSeekTime:seekTime slowTimeRange:slowTimeRange];
 }
 
+- (void)startFastPlayWithSeekTime:(int64_t)seekTime slowTimeRange:(NSRange)slowTimeRange {
+    [self.audioPlayer startPlayWithSeekTime:seekTime];
+    [self.videoPlayer startFastPlayWithSeekTime:seekTime slowTimeRange:slowTimeRange];
+}
+
 - (void)startSlowPlayWithSlowTimeRange:(NSRange)slowTimeRange {
     [self startSlowPlayWithSeekTime:0 slowTimeRange:slowTimeRange];
 }

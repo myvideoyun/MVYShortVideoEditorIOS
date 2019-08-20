@@ -44,7 +44,7 @@ double MVYVideoDecoderPTSRate = 2;
         frame.offset = offsetTime;
 
         return frame;
-    }];
+    } withSpeed:1.0f];
 }
 
 @end

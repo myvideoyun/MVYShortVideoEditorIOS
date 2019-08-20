@@ -157,8 +157,8 @@ static NSString *TAG = @"AudioPlayer";
                 return;
             }
             
-            NSLog(@"%@ 播放一帧 globalPts : %d duration : %d globalLength : %d offset : %d", TAG, frame.globalPts, frame.duration, frame.offset, frame.globalLength);
-
+            //NSLog(@"%@ 播放一帧 globalPts : %d duration : %d globalLength : %d", TAG, frame.globalPts, frame.duration, frame.globalLength);
+            
             if (self.playerFirstFrameTime == 0) {
                 _playerFirstFrameTime = [NSDate date].timeIntervalSince1970 * 1000 - _seekTime;
             }

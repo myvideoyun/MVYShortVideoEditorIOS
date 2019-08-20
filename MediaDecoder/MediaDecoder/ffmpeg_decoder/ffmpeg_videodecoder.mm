@@ -313,7 +313,7 @@ static std::vector<VideoFrame> decodeAFrame(VideoDecoder* videoDecoder) {
             ss << "pts : " << frame.pts << " duration : " << frame.duration;
             ss << " length : " << frame.length;
             ss << " isKeyFrame : " << frame.isKeyFrame;
-            NSLog(@"%s %s", TAG, ss.str().data());
+            //NSLog(@"%s %s", TAG, ss.str().data());
             
             result.push_back(frame);
             

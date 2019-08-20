@@ -64,7 +64,7 @@ static NSString *TAG = @"VideoDecoder";
 }
 
 // 从指定时间开始解码
-- (void)startDecodeWithSeekTime:(int64_t)seekTime handleVideoFrame:(MVYVideoFrame *(^)(MVYVideoFrame *))handleVideoFrame {
+- (void)startDecodeWithSeekTime:(int64_t)seekTime handleVideoFrame:(MVYVideoFrame *(^)(MVYVideoFrame *))handleVideoFrame withSpeed:(float)speed {
     _isDecodeStop = false;
     
     _seekTime = seekTime;
@@ -249,11 +249,11 @@ static NSString *TAG = @"VideoDecoder";
                 for (MVYVideoFrame *frame in frames) {
                     
                     // 设置全局 pts 和 length 数据
-                    frame.globalPts = frame.pts;
+                    frame.globalPts = frame.pts * speed;
                     for (int x = 0; x < i; x++) {
                         frame.globalPts += [videoLengths[x] longValue];
                     }
-                    frame.globalLength = totalVideoLength;
+                    frame.globalLength = totalVideoLength * speed;
                     
                     if (self.decoderDelegate != NULL) {
                         if (handleVideoFrame != NULL) {
@@ -298,8 +298,8 @@ static NSString *TAG = @"VideoDecoder";
     });
 }
 
-- (void)startDecodeWithSeekTime:(int64_t)seekTime {
-    [self startDecodeWithSeekTime:seekTime handleVideoFrame:nil];
+- (void)startDecodeWithSeekTime:(int64_t)seekTime withSpeed:(float)speed{
+    [self startDecodeWithSeekTime:seekTime handleVideoFrame:nil withSpeed:speed];
 }
 
 // 停止解码器

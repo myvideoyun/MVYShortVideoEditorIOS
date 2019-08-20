@@ -65,6 +65,9 @@ class MVYOutputViewController: UIViewController {
     // 音量处理完成后的原始音频
     var volumeOriginAudioPath = ""
     
+    // normalized audio path
+    var normalizedAudioPath = ""
+    
     // 剪切完成后的背景音乐
     var cutMusicPath = ""
     
@@ -115,6 +118,8 @@ class MVYOutputViewController: UIViewController {
         self.decoderWorkType = decoderWorkType
         
         self.effectProcessBlock = effectProcessBlock
+        
+        self.decoderWorkType = decoderWorkType
     }
 
     override func viewDidLoad() {
@@ -174,13 +179,16 @@ extension MVYOutputViewController: MVYVideoDecoderDelegate, MVYAudioDecoderDeleg
         
         switch decoderWorkType.type {
         case .normal:
-            videoDecoder.startDecode(withSeekTime: 0)
+            videoDecoder.startDecode(withSeekTime: 0, withSpeed:1.0)
             
         case .reverse:
             videoDecoder.startReverseDecode(withSeekTime: 0)
             
         case .slow:
-            videoDecoder.startSlowDecode(withSeekTime: 0, slowTime: decoderWorkType.slowDecoderRange)
+            videoDecoder.startDecode(withSeekTime: 0, withSpeed: 2.0)
+
+        case .fast:
+            videoDecoder.startDecode(withSeekTime: 0, withSpeed: 0.5)
         }
     }
     
@@ -191,7 +199,7 @@ extension MVYOutputViewController: MVYVideoDecoderDelegate, MVYAudioDecoderDeleg
         case .normal, .reverse:
             audioDecoder.startDecode(withSeekTime: 0)
             
-        case .slow:
+        case .slow, .fast:
             audioDecoder.startSlowDecode(withSeekTime: 0, slowTime: decoderWorkType.slowDecoderRange)
         }
         
@@ -350,6 +358,43 @@ extension MVYOutputViewController {
                 } else {
                     MBProgressHUD.hide(for: self.view, animated: true)
                     let alert = UIAlertController.init(title: "错误", message: "原始音频拼接失败", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction.init(title: "取消", style: .cancel, handler: { (action) in
+                        self.dismiss(animated: true , completion: nil)
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+    }
+    
+    private func fastSlowAudio(inputAudioPath:String){
+        let uuid = UUID().uuidString.filter { (c) -> Bool in return c != "-" }
+        let audioFileName = "\(uuid).wav"
+        let audioPath = "\(NSTemporaryDirectory())\(audioFileName)"
+        var speed = "\(1.0)"
+        if decoderWorkType.type == .slow{
+            NSLog("Set audio speed 0.5")
+            speed = "\(0.5)"
+        }
+        else if decoderWorkType.type == .fast{
+            NSLog("Set audio speed 2.0")
+            speed = "\(2.0)"
+        }
+        
+        let fastSlowCMD = MVYFFmpegCMD.adjustSpeedCMD(withSpeed: speed, inputAudioPath: inputAudioPath, outputAudioPath: audioPath)
+        NSLog("Ajust audio speed")
+        MVYFFmpegCMD.exec(fastSlowCMD){ (result) in
+            
+            NSLog("Ajust Audio speed return %d", result)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                if result == 0 {
+                    self.normalizedAudioPath = audioPath
+                    self.audioNextStepProcess()
+                    
+                } else {
+                    MBProgressHUD.hide(for: self.view, animated: true)
+                    let alert = UIAlertController.init(title: "错误", message: "audio speed ajust", preferredStyle: .alert)
                     alert.addAction(UIAlertAction.init(title: "取消", style: .cancel, handler: { (action) in
                         self.dismiss(animated: true , completion: nil)
                     }))
@@ -522,6 +567,31 @@ extension MVYOutputViewController {
         }
     }
     
+    private func exportGif(inputVideoPath:String){
+        let uuid = UUID().uuidString.filter { (c) -> Bool in return c != "-" }
+        let gifName = "\(uuid).gif"
+        let gifPath = "\(NSTemporaryDirectory())\(gifName)"
+        let cmd = MVYFFmpegCMD.exportGifCMD(withInputVideoPath: inputVideoPath, outputGifPath: gifPath)
+        NSLog("Export gif from video \(cmd!)")
+        MVYFFmpegCMD.exec(cmd) { (result) in
+            
+            NSLog("export gif result: %d", result)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                if result == 0 {
+                    NSLog("export gif success")
+                } else {
+                    MBProgressHUD.hide(for: self.view, animated: true)
+                    let alert = UIAlertController.init(title: "错误", message: "export gif ", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction.init(title: "取消", style: .cancel, handler: { (action) in
+                        self.dismiss(animated: true , completion: nil)
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+    }
+    
     // 音频下一步处理
     private func audioNextStepProcess() {
         if audioPaths.count > 0 {
@@ -530,22 +600,52 @@ extension MVYOutputViewController {
                 return
             }
             
+            if decoderWorkType.type == .slow || decoderWorkType.type == .fast {
+                if normalizedAudioPath == "" {
+                    NSLog("Ajust audio speed now for concated audio")
+                    fastSlowAudio(inputAudioPath: concatOriginAudioPath)
+                    return
+                }
+                else{
+                    NSLog("Audio speed is ajusted already")
+                }
+            }
+            else
+            {
+                normalizedAudioPath = concatOriginAudioPath
+            }
+            
             if audioVolume != 1 {
                 if volumeOriginAudioPath == "" {
-                    setOriginAudioVolume(inputAudioPath: concatOriginAudioPath)
+                    setOriginAudioVolume(inputAudioPath: normalizedAudioPath)
                     return
                 }
             } else {
-                volumeOriginAudioPath = concatOriginAudioPath
+                volumeOriginAudioPath = normalizedAudioPath
             }
         } else {
+            if decoderWorkType.type == .slow || decoderWorkType.type == .fast {
+                if normalizedAudioPath == "" {
+                    NSLog("Ajust audio speed now for the whole audio")
+                    fastSlowAudio(inputAudioPath: audioPaths[0])
+                    return
+                }
+                else{
+                    NSLog("Audio speed is ajusted already")
+                }
+            }
+            else
+            {
+                normalizedAudioPath = audioPaths[0]
+            }
+            
             if audioVolume != 1 {
                 if volumeOriginAudioPath == "" {
-                    setOriginAudioVolume(inputAudioPath: audioPaths[0])
+                    setOriginAudioVolume(inputAudioPath: normalizedAudioPath)
                     return
                 }
             } else {
-                volumeOriginAudioPath = concatOriginAudioPath
+                volumeOriginAudioPath = normalizedAudioPath
             }
         }
         
@@ -571,7 +671,9 @@ extension MVYOutputViewController {
         } else {
             mixAudioPath = volumeOriginAudioPath
         }
-        
+        // demo how to generate the gif file;
+        exportGif(inputVideoPath: self.videoPaths[0])
+
         // 开始解码
         startDecodeVideo()
         startDecodeAudio()
