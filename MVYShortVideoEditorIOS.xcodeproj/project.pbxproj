@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57705B7DFD85C889EBA8A5C3 /* Pods_MVYShortVideoEditorIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518D84CAFA56125BDC4DA9D9 /* Pods_MVYShortVideoEditorIOS.framework */; };
+		D30C35B522A8B1CF009A168F /* TimeEffectResources in Resources */ = {isa = PBXBuildFile; fileRef = D30C35B422A8B1CF009A168F /* TimeEffectResources */; };
+		D31CB811227EBE2A004AE345 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31CB810227EBE2A004AE345 /* CoreServices.framework */; };
+		D31CB814227EC0FB004AE345 /* MVYCutMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CB813227EC0FB004AE345 /* MVYCutMovieViewController.swift */; };
+		D31CB816227EC108004AE345 /* MVYCutMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CB815227EC108004AE345 /* MVYCutMovieView.swift */; };
+		D31CB81D227EC9A4004AE345 /* RangeSeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CB81A227EC9A4004AE345 /* RangeSeekSlider.swift */; };
+		D31CB81E227EC9A4004AE345 /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CB81B227EC9A4004AE345 /* TapticEngine.swift */; };
+		D31CB81F227EC9A4004AE345 /* RangeSeekSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CB81C227EC9A4004AE345 /* RangeSeekSliderDelegate.swift */; };
+		D31CB83022813AD8004AE345 /* AlanWalker-Alone.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D31CB82E22813AD8004AE345 /* AlanWalker-Alone.m4a */; };
+		D31CB83122813AD8004AE345 /* AlanWalker-TheSpectre.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D31CB82F22813AD8004AE345 /* AlanWalker-TheSpectre.m4a */; };
+		D325672D21F60568007711F6 /* MVYMediaWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D325672721F60567007711F6 /* MVYMediaWriter.m */; };
+		D325672F21F60568007711F6 /* MVYCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D325672921F60567007711F6 /* MVYCamera.m */; };
+		D325673821F60965007711F6 /* MVYAudioTempoEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = D325673521F60965007711F6 /* MVYAudioTempoEffect.m */; };
+		D325673921F60965007711F6 /* MVYAudioMixEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = D325673721F60965007711F6 /* MVYAudioMixEffect.m */; };
+		D325676821F8AE13007711F6 /* FilterResources in Resources */ = {isa = PBXBuildFile; fileRef = D325676721F8AE13007711F6 /* FilterResources */; };
+		D327D23722C9E5D700A47D28 /* MVYImageTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327D23622C9E5D700A47D28 /* MVYImageTransitionViewController.swift */; };
+		D327D23922C9E5E600A47D28 /* MVYImageTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327D23822C9E5E600A47D28 /* MVYImageTransitionView.swift */; };
+		D327D23B22CA03D400A47D28 /* MVYImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327D23A22CA03D400A47D28 /* MVYImageTransition.swift */; };
+		D34EE17022FBF984002AB9DE /* MVYRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE16522FBF984002AB9DE /* MVYRecordViewController.swift */; };
+		D34EE17122FBF984002AB9DE /* MVYRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE16622FBF984002AB9DE /* MVYRecordView.swift */; };
+		D34EE17222FBF984002AB9DE /* MVYMediaItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE16822FBF984002AB9DE /* MVYMediaItemModel.swift */; };
+		D34EE17322FBF984002AB9DE /* MVYStyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE16922FBF984002AB9DE /* MVYStyleModel.swift */; };
+		D34EE17422FBF984002AB9DE /* MVYBeautyPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE16B22FBF984002AB9DE /* MVYBeautyPanel.swift */; };
+		D34EE17522FBF984002AB9DE /* MVYSpeedRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE16C22FBF984002AB9DE /* MVYSpeedRadioButton.swift */; };
+		D34EE17622FBF984002AB9DE /* MVYRecordProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE16D22FBF984002AB9DE /* MVYRecordProgressView.swift */; };
+		D34EE17722FBF984002AB9DE /* MVYStylePanelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE16E22FBF984002AB9DE /* MVYStylePanelCell.swift */; };
+		D34EE17822FBF984002AB9DE /* MVYStylePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE16F22FBF984002AB9DE /* MVYStylePanel.swift */; };
+		D34EE18022FC08D8002AB9DE /* MVYMusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE17B22FC08D8002AB9DE /* MVYMusicModel.swift */; };
+		D34EE18122FC08D8002AB9DE /* MVYMusicCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE17D22FC08D8002AB9DE /* MVYMusicCellView.swift */; };
+		D34EE18222FC08D8002AB9DE /* MVYMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE17E22FC08D8002AB9DE /* MVYMusicView.swift */; };
+		D34EE18322FC08D8002AB9DE /* MVYMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE17F22FC08D8002AB9DE /* MVYMusicViewController.swift */; };
+		D34EE19E22FC08EC002AB9DE /* MVYEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE18622FC08EC002AB9DE /* MVYEffectView.swift */; };
+		D34EE19F22FC08EC002AB9DE /* MVYEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE18722FC08EC002AB9DE /* MVYEffectViewController.swift */; };
+		D34EE1A022FC08EC002AB9DE /* MVYEffectTimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE18922FC08EC002AB9DE /* MVYEffectTimeModel.swift */; };
+		D34EE1A122FC08EC002AB9DE /* MVYEffectTimeIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE18A22FC08EC002AB9DE /* MVYEffectTimeIndexModel.swift */; };
+		D34EE1A222FC08EC002AB9DE /* MVYEffectCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE18B22FC08EC002AB9DE /* MVYEffectCellModel.swift */; };
+		D34EE1A322FC08EC002AB9DE /* MVYDecoderWorkTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE18C22FC08EC002AB9DE /* MVYDecoderWorkTypeModel.swift */; };
+		D34EE1A422FC08EC002AB9DE /* MVYEffectProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE18E22FC08EC002AB9DE /* MVYEffectProgressView.swift */; };
+		D34EE1A522FC08EC002AB9DE /* MVYEffectSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE18F22FC08EC002AB9DE /* MVYEffectSelectorView.swift */; };
+		D34EE1A622FC08EC002AB9DE /* MVYEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19022FC08EC002AB9DE /* MVYEditView.swift */; };
+		D34EE1A722FC08EC002AB9DE /* MVYImageStickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19222FC08EC002AB9DE /* MVYImageStickerModel.swift */; };
+		D34EE1A822FC08EC002AB9DE /* MVYSubtitlePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19422FC08EC002AB9DE /* MVYSubtitlePanel.swift */; };
+		D34EE1A922FC08EC002AB9DE /* MVYVolumeEditPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19522FC08EC002AB9DE /* MVYVolumeEditPanel.swift */; };
+		D34EE1AA22FC08EC002AB9DE /* MVYCutAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19622FC08EC002AB9DE /* MVYCutAudioView.swift */; };
+		D34EE1AB22FC08EC002AB9DE /* MVYCutAudioPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19722FC08EC002AB9DE /* MVYCutAudioPanel.swift */; };
+		D34EE1AC22FC08EC002AB9DE /* MVYStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19822FC08EC002AB9DE /* MVYStickerView.swift */; };
+		D34EE1AD22FC08EC002AB9DE /* MVYStickerPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19922FC08EC002AB9DE /* MVYStickerPanel.swift */; };
+		D34EE1AE22FC08EC002AB9DE /* MVYEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19A22FC08EC002AB9DE /* MVYEditViewController.swift */; };
+		D34EE1AF22FC08EC002AB9DE /* MVYCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19C22FC08EC002AB9DE /* MVYCoverView.swift */; };
+		D34EE1B022FC08EC002AB9DE /* MVYCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE19D22FC08EC002AB9DE /* MVYCoverViewController.swift */; };
+		D34EE1B422FC08F9002AB9DE /* MVYOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE1B222FC08F9002AB9DE /* MVYOutputView.swift */; };
+		D34EE1B522FC08F9002AB9DE /* MVYOutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EE1B322FC08F9002AB9DE /* MVYOutputViewController.swift */; };
+		D3680609226F32BF009C1F1B /* MVYMediaDecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32327A5226432A600F6BC51 /* MVYMediaDecoder.framework */; };
+		D368060A226F32BF009C1F1B /* MVYMediaDecoder.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D32327A5226432A600F6BC51 /* MVYMediaDecoder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D368060E226F32C1009C1F1B /* MVYEffectHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D69C912266C42B005F82EF /* MVYEffectHandler.framework */; };
+		D368060F226F32C1009C1F1B /* MVYEffectHandler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3D69C912266C42B005F82EF /* MVYEffectHandler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D38E7E92228C4054003851F3 /* MVYAudioAveragePower.m in Sources */ = {isa = PBXBuildFile; fileRef = D38E7E91228C4054003851F3 /* MVYAudioAveragePower.m */; };
+		D3B0B50F2264355C00EDF6DB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B0B50E2264355C00EDF6DB /* libc++.tbd */; };
+		D3C1935A229E314400B4C3B7 /* MVYMagicShader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8CF7F229A97110086B289 /* MVYMagicShader.framework */; };
+		D3C1935B229E314400B4C3B7 /* MVYMagicShader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8CF7F229A97110086B289 /* MVYMagicShader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3CEE91C2289917900316CED /* MVYAudioTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CEE91B2289917900316CED /* MVYAudioTracker.m */; };
+		D3D69CAB2266CB85005F82EF /* EffectHandler.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3D69CAA2266CB85005F82EF /* EffectHandler.bundle */; };
+		D3E8CF2B229812190086B289 /* VideoEffectResources in Resources */ = {isa = PBXBuildFile; fileRef = D3E8CF2A229812190086B289 /* VideoEffectResources */; };
+		D3E9898021F448A5001EE5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9897F21F448A5001EE5FB /* AppDelegate.swift */; };
+		D3E9898221F448A5001EE5FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9898121F448A5001EE5FB /* ViewController.swift */; };
+		D3E9898721F448A6001EE5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E9898621F448A6001EE5FB /* Assets.xcassets */; };
+		D3E9898A21F448A6001EE5FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E9898821F448A6001EE5FB /* LaunchScreen.storyboard */; };
+		D3E9899421F44B92001EE5FB /* MVYInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9899321F44B92001EE5FB /* MVYInputViewController.swift */; };
+		D3E9899621F44BA8001EE5FB /* MVYInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9899521F44BA8001EE5FB /* MVYInputView.swift */; };
+		D3E9899B21F44F91001EE5FB /* MVYRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9899A21F44F91001EE5FB /* MVYRadioButton.swift */; };
+		D3E9899D21F450AB001EE5FB /* ExtensionUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E9899C21F450AB001EE5FB /* ExtensionUIButton.swift */; };
+		D3E989A221F46804001EE5FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E989A121F46804001EE5FB /* AVFoundation.framework */; };
+		D3E989BC21F4BCF2001EE5FB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E989BB21F4BCF2001EE5FB /* CoreMedia.framework */; };
+		D3F0DC0E22FFE2C500F5E9AD /* MVYSlowPlayProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0DC0D22FFE2C500F5E9AD /* MVYSlowPlayProgressView.swift */; };
+		D3FDF49921FF68F1003BF01E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FDF49821FF68F1003BF01E /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D32327A4226432A600F6BC51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D34A3C7B22641F4B00EDED53 /* MVYMediaDecoder.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D353F7DE2263473300A68FF2;
+			remoteInfo = MVYMediaDecoder;
+		};
+		D368060B226F32BF009C1F1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D34A3C7B22641F4B00EDED53 /* MVYMediaDecoder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D353F7DD2263473300A68FF2;
+			remoteInfo = MVYMediaDecoder;
+		};
+		D3680610226F32C1009C1F1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3D69C8C2266C42B005F82EF /* MVYEffectHandler.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D3D69C362265FA41005F82EF;
+			remoteInfo = MVYEffectHandler;
+		};
+		D3C19357229E313E00B4C3B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E8CF7A229A97110086B289 /* MVYMagicShader.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E8CF3C229A85CA0086B289;
+			remoteInfo = MVYMagicShader;
+		};
+		D3C1935C229E314400B4C3B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E8CF7A229A97110086B289 /* MVYMagicShader.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E8CF3C229A85CA0086B289;
+			remoteInfo = MVYMagicShader;
+		};
+		D3D69C902266C42B005F82EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3D69C8C2266C42B005F82EF /* MVYEffectHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3D69C372265FA41005F82EF;
+			remoteInfo = MVYEffectHandler;
+		};
+		D3D69CA22266C4A9005F82EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D34A3C7B22641F4B00EDED53 /* MVYMediaDecoder.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D353F7DD2263473300A68FF2;
+			remoteInfo = MVYMediaDecoder;
+		};
+		D3D69CA72266C4AD005F82EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3D69C8C2266C42B005F82EF /* MVYEffectHandler.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D3D69C362265FA41005F82EF;
+			remoteInfo = MVYEffectHandler;
+		};
+		D3E8CF7E229A97110086B289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3E8CF7A229A97110086B289 /* MVYMagicShader.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3E8CF3D229A85CA0086B289;
+			remoteInfo = MVYMagicShader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D368060D226F32BF009C1F1B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D368060A226F32BF009C1F1B /* MVYMediaDecoder.framework in Embed Frameworks */,
+				D368060F226F32C1009C1F1B /* MVYEffectHandler.framework in Embed Frameworks */,
+				D3C1935B229E314400B4C3B7 /* MVYMagicShader.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F3D404A1C10127712E891CC /* Pods-MVYShortVideoEditorIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVYShortVideoEditorIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVYShortVideoEditorIOS/Pods-MVYShortVideoEditorIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		489B819942F99A23CDDFE731 /* Pods-MVYShortVideoEditorIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVYShortVideoEditorIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVYShortVideoEditorIOS/Pods-MVYShortVideoEditorIOS.release.xcconfig"; sourceTree = "<group>"; };
+		518D84CAFA56125BDC4DA9D9 /* Pods_MVYShortVideoEditorIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVYShortVideoEditorIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30C35B422A8B1CF009A168F /* TimeEffectResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TimeEffectResources; sourceTree = "<group>"; };
+		D31CB810227EBE2A004AE345 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		D31CB813227EC0FB004AE345 /* MVYCutMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVYCutMovieViewController.swift; sourceTree = "<group>"; };
+		D31CB815227EC108004AE345 /* MVYCutMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVYCutMovieView.swift; sourceTree = "<group>"; };
+		D31CB81A227EC9A4004AE345 /* RangeSeekSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSeekSlider.swift; sourceTree = "<group>"; };
+		D31CB81B227EC9A4004AE345 /* TapticEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapticEngine.swift; sourceTree = "<group>"; };
+		D31CB81C227EC9A4004AE345 /* RangeSeekSliderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSeekSliderDelegate.swift; sourceTree = "<group>"; };
+		D31CB82E22813AD8004AE345 /* AlanWalker-Alone.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlanWalker-Alone.m4a"; sourceTree = "<group>"; };
+		D31CB82F22813AD8004AE345 /* AlanWalker-TheSpectre.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AlanWalker-TheSpectre.m4a"; sourceTree = "<group>"; };
+		D325672221F60566007711F6 /* MVYShortVideoEditorIOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MVYShortVideoEditorIOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		D325672321F60567007711F6 /* MVYCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYCamera.h; sourceTree = "<group>"; };
+		D325672621F60567007711F6 /* MVYMediaWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYMediaWriter.h; sourceTree = "<group>"; };
+		D325672721F60567007711F6 /* MVYMediaWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYMediaWriter.m; sourceTree = "<group>"; };
+		D325672921F60567007711F6 /* MVYCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYCamera.m; sourceTree = "<group>"; };
+		D325673421F60965007711F6 /* MVYAudioTempoEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYAudioTempoEffect.h; sourceTree = "<group>"; };
+		D325673521F60965007711F6 /* MVYAudioTempoEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYAudioTempoEffect.m; sourceTree = "<group>"; };
+		D325673621F60965007711F6 /* MVYAudioMixEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVYAudioMixEffect.h; sourceTree = "<group>"; };
+		D325673721F60965007711F6 /* MVYAudioMixEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVYAudioMixEffect.m; sourceTree = "<group>"; };
+		D325676721F8AE13007711F6 /* FilterResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FilterResources; sourceTree = "<group>"; };
+		D327D23622C9E5D700A47D28 /* MVYImageTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVYImageTransitionViewController.swift; sourceTree = "<group>"; };
+		D327D23822C9E5E600A47D28 /* MVYImageTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVYImageTransitionView.swift; sourceTree = "<group>"; };
+		D327D23A22CA03D400A47D28 /* MVYImageTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVYImageTransition.swift; sourceTree = "<group>"; };
+		D34A3C7B22641F4B00EDED53 /* MVYMediaDecoder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVYMediaDecoder.xcodeproj; path = ../MediaDecoder/MVYMediaDecoder.xcodeproj; sourceTree = "<group>"; };
+		D34EE16522FBF984002AB9DE /* MVYRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYRecordViewController.swift; sourceTree = "<group>"; };
+		D34EE16622FBF984002AB9DE /* MVYRecordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYRecordView.swift; sourceTree = "<group>"; };
+		D34EE16822FBF984002AB9DE /* MVYMediaItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYMediaItemModel.swift; sourceTree = "<group>"; };
+		D34EE16922FBF984002AB9DE /* MVYStyleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYStyleModel.swift; sourceTree = "<group>"; };
+		D34EE16B22FBF984002AB9DE /* MVYBeautyPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYBeautyPanel.swift; sourceTree = "<group>"; };
+		D34EE16C22FBF984002AB9DE /* MVYSpeedRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYSpeedRadioButton.swift; sourceTree = "<group>"; };
+		D34EE16D22FBF984002AB9DE /* MVYRecordProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYRecordProgressView.swift; sourceTree = "<group>"; };
+		D34EE16E22FBF984002AB9DE /* MVYStylePanelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYStylePanelCell.swift; sourceTree = "<group>"; };
+		D34EE16F22FBF984002AB9DE /* MVYStylePanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYStylePanel.swift; sourceTree = "<group>"; };
+		D34EE17B22FC08D8002AB9DE /* MVYMusicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYMusicModel.swift; sourceTree = "<group>"; };
+		D34EE17D22FC08D8002AB9DE /* MVYMusicCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYMusicCellView.swift; sourceTree = "<group>"; };
+		D34EE17E22FC08D8002AB9DE /* MVYMusicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYMusicView.swift; sourceTree = "<group>"; };
+		D34EE17F22FC08D8002AB9DE /* MVYMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYMusicViewController.swift; sourceTree = "<group>"; };
+		D34EE18622FC08EC002AB9DE /* MVYEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYEffectView.swift; sourceTree = "<group>"; };
+		D34EE18722FC08EC002AB9DE /* MVYEffectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYEffectViewController.swift; sourceTree = "<group>"; };
+		D34EE18922FC08EC002AB9DE /* MVYEffectTimeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYEffectTimeModel.swift; sourceTree = "<group>"; };
+		D34EE18A22FC08EC002AB9DE /* MVYEffectTimeIndexModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYEffectTimeIndexModel.swift; sourceTree = "<group>"; };
+		D34EE18B22FC08EC002AB9DE /* MVYEffectCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYEffectCellModel.swift; sourceTree = "<group>"; };
+		D34EE18C22FC08EC002AB9DE /* MVYDecoderWorkTypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYDecoderWorkTypeModel.swift; sourceTree = "<group>"; };
+		D34EE18E22FC08EC002AB9DE /* MVYEffectProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYEffectProgressView.swift; sourceTree = "<group>"; };
+		D34EE18F22FC08EC002AB9DE /* MVYEffectSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYEffectSelectorView.swift; sourceTree = "<group>"; };
+		D34EE19022FC08EC002AB9DE /* MVYEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYEditView.swift; sourceTree = "<group>"; };
+		D34EE19222FC08EC002AB9DE /* MVYImageStickerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYImageStickerModel.swift; sourceTree = "<group>"; };
+		D34EE19422FC08EC002AB9DE /* MVYSubtitlePanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYSubtitlePanel.swift; sourceTree = "<group>"; };
+		D34EE19522FC08EC002AB9DE /* MVYVolumeEditPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYVolumeEditPanel.swift; sourceTree = "<group>"; };
+		D34EE19622FC08EC002AB9DE /* MVYCutAudioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYCutAudioView.swift; sourceTree = "<group>"; };
+		D34EE19722FC08EC002AB9DE /* MVYCutAudioPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYCutAudioPanel.swift; sourceTree = "<group>"; };
+		D34EE19822FC08EC002AB9DE /* MVYStickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYStickerView.swift; sourceTree = "<group>"; };
+		D34EE19922FC08EC002AB9DE /* MVYStickerPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYStickerPanel.swift; sourceTree = "<group>"; };
+		D34EE19A22FC08EC002AB9DE /* MVYEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYEditViewController.swift; sourceTree = "<group>"; };
+		D34EE19C22FC08EC002AB9DE /* MVYCoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYCoverView.swift; sourceTree = "<group>"; };
+		D34EE19D22FC08EC002AB9DE /* MVYCoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYCoverViewController.swift; sourceTree = "<group>"; };
+		D34EE1B222FC08F9002AB9DE /* MVYOutputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYOutputView.swift; sourceTree = "<group>"; };
+		D34EE1B322FC08F9002AB9DE /* MVYOutputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVYOutputViewController.swift; sourceTree = "<group>"; };
+		D38E7E90228C4054003851F3 /* MVYAudioAveragePower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVYAudioAveragePower.h; sourceTree = "<group>"; };
+		D38E7E91228C4054003851F3 /* MVYAudioAveragePower.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVYAudioAveragePower.m; sourceTree = "<group>"; };
+		D3B0B50E2264355C00EDF6DB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D3CEE91A2289917900316CED /* MVYAudioTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVYAudioTracker.h; sourceTree = "<group>"; };
+		D3CEE91B2289917900316CED /* MVYAudioTracker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVYAudioTracker.m; sourceTree = "<group>"; };
+		D3D69C8C2266C42B005F82EF /* MVYEffectHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVYEffectHandler.xcodeproj; path = EffectHandler/MVYEffectHandler.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D3D69CAA2266CB85005F82EF /* EffectHandler.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EffectHandler.bundle; sourceTree = SOURCE_ROOT; };
+		D3E8CF2A229812190086B289 /* VideoEffectResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VideoEffectResources; sourceTree = "<group>"; };
+		D3E8CF7A229A97110086B289 /* MVYMagicShader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVYMagicShader.xcodeproj; path = MagicShader/MVYMagicShader.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D3E9897C21F448A5001EE5FB /* MVYShortVideoEditorIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVYShortVideoEditorIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E9897F21F448A5001EE5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3E9898121F448A5001EE5FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3E9898621F448A6001EE5FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3E9898921F448A6001EE5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3E9898B21F448A6001EE5FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E9899321F44B92001EE5FB /* MVYInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVYInputViewController.swift; sourceTree = "<group>"; };
+		D3E9899521F44BA8001EE5FB /* MVYInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVYInputView.swift; sourceTree = "<group>"; };
+		D3E9899A21F44F91001EE5FB /* MVYRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVYRadioButton.swift; sourceTree = "<group>"; };
+		D3E9899C21F450AB001EE5FB /* ExtensionUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIButton.swift; sourceTree = "<group>"; };
+		D3E989A121F46804001EE5FB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D3E989BB21F4BCF2001EE5FB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D3F0DC0D22FFE2C500F5E9AD /* MVYSlowPlayProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVYSlowPlayProgressView.swift; sourceTree = "<group>"; };
+		D3FDF3FF21FF68A5003BF01E /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = MVYShortVideoEditorIOS/FFmpeg/lib/libavutil.a; sourceTree = "<group>"; };
+		D3FDF40021FF68A5003BF01E /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = MVYShortVideoEditorIOS/FFmpeg/lib/libswresample.a; sourceTree = "<group>"; };
+		D3FDF40121FF68A5003BF01E /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = MVYShortVideoEditorIOS/FFmpeg/lib/libswscale.a; sourceTree = "<group>"; };
+		D3FDF40221FF68A5003BF01E /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = MVYShortVideoEditorIOS/FFmpeg/lib/libavformat.a; sourceTree = "<group>"; };
+		D3FDF40321FF68A5003BF01E /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = MVYShortVideoEditorIOS/FFmpeg/lib/libavcodec.a; sourceTree = "<group>"; };
+		D3FDF40421FF68A5003BF01E /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = MVYShortVideoEditorIOS/FFmpeg/lib/libavfilter.a; sourceTree = "<group>"; };
+		D3FDF49821FF68F1003BF01E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3E9897921F448A5001EE5FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3B0B50F2264355C00EDF6DB /* libc++.tbd in Frameworks */,
+				D3FDF49921FF68F1003BF01E /* libz.tbd in Frameworks */,
+				D3C1935A229E314400B4C3B7 /* MVYMagicShader.framework in Frameworks */,
+				D31CB811227EBE2A004AE345 /* CoreServices.framework in Frameworks */,
+				D3E989BC21F4BCF2001EE5FB /* CoreMedia.framework in Frameworks */,
+				D3E989A221F46804001EE5FB /* AVFoundation.framework in Frameworks */,
+				D368060E226F32C1009C1F1B /* MVYEffectHandler.framework in Frameworks */,
+				57705B7DFD85C889EBA8A5C3 /* Pods_MVYShortVideoEditorIOS.framework in Frameworks */,
+				D3680609226F32BF009C1F1B /* MVYMediaDecoder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A1B5686E572A95F431ABA12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F3D404A1C10127712E891CC /* Pods-MVYShortVideoEditorIOS.debug.xcconfig */,
+				489B819942F99A23CDDFE731 /* Pods-MVYShortVideoEditorIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A51F41C1AE3C30FA085ADF0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D31CB810227EBE2A004AE345 /* CoreServices.framework */,
+				D3B0B50E2264355C00EDF6DB /* libc++.tbd */,
+				D3FDF49821FF68F1003BF01E /* libz.tbd */,
+				D3FDF40321FF68A5003BF01E /* libavcodec.a */,
+				D3FDF40421FF68A5003BF01E /* libavfilter.a */,
+				D3FDF40221FF68A5003BF01E /* libavformat.a */,
+				D3FDF3FF21FF68A5003BF01E /* libavutil.a */,
+				D3FDF40021FF68A5003BF01E /* libswresample.a */,
+				D3FDF40121FF68A5003BF01E /* libswscale.a */,
+				D3E989BB21F4BCF2001EE5FB /* CoreMedia.framework */,
+				D3E989A121F46804001EE5FB /* AVFoundation.framework */,
+				518D84CAFA56125BDC4DA9D9 /* Pods_MVYShortVideoEditorIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D31CB812227EC082004AE345 /* CutMoviePage */ = {
+			isa = PBXGroup;
+			children = (
+				D31CB815227EC108004AE345 /* MVYCutMovieView.swift */,
+				D31CB813227EC0FB004AE345 /* MVYCutMovieViewController.swift */,
+			);
+			path = CutMoviePage;
+			sourceTree = "<group>";
+		};
+		D31CB819227EC980004AE345 /* RangeSeekSlider */ = {
+			isa = PBXGroup;
+			children = (
+				D31CB81A227EC9A4004AE345 /* RangeSeekSlider.swift */,
+				D31CB81C227EC9A4004AE345 /* RangeSeekSliderDelegate.swift */,
+				D31CB81B227EC9A4004AE345 /* TapticEngine.swift */,
+			);
+			path = RangeSeekSlider;
+			sourceTree = "<group>";
+		};
+		D32327A1226432A600F6BC51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D32327A5226432A600F6BC51 /* MVYMediaDecoder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D325672121F6053D007711F6 /* RecordTool */ = {
+			isa = PBXGroup;
+			children = (
+				D325673321F60957007711F6 /* Audio */,
+				D325673221F6094A007711F6 /* Video */,
+			);
+			path = RecordTool;
+			sourceTree = "<group>";
+		};
+		D325673221F6094A007711F6 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				D325672321F60567007711F6 /* MVYCamera.h */,
+				D325672921F60567007711F6 /* MVYCamera.m */,
+				D325672621F60567007711F6 /* MVYMediaWriter.h */,
+				D325672721F60567007711F6 /* MVYMediaWriter.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		D325673321F60957007711F6 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				D325673621F60965007711F6 /* MVYAudioMixEffect.h */,
+				D325673721F60965007711F6 /* MVYAudioMixEffect.m */,
+				D325673421F60965007711F6 /* MVYAudioTempoEffect.h */,
+				D325673521F60965007711F6 /* MVYAudioTempoEffect.m */,
+				D3CEE91A2289917900316CED /* MVYAudioTracker.h */,
+				D3CEE91B2289917900316CED /* MVYAudioTracker.m */,
+				D38E7E90228C4054003851F3 /* MVYAudioAveragePower.h */,
+				D38E7E91228C4054003851F3 /* MVYAudioAveragePower.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		D325676621F8AE00007711F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D31CB82E22813AD8004AE345 /* AlanWalker-Alone.m4a */,
+				D31CB82F22813AD8004AE345 /* AlanWalker-TheSpectre.m4a */,
+				D325676721F8AE13007711F6 /* FilterResources */,
+				D3E8CF2A229812190086B289 /* VideoEffectResources */,
+				D30C35B422A8B1CF009A168F /* TimeEffectResources */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D327D23222C9BC2100A47D28 /* ImageTransitionPage */ = {
+			isa = PBXGroup;
+			children = (
+				D327D23A22CA03D400A47D28 /* MVYImageTransition.swift */,
+				D327D23822C9E5E600A47D28 /* MVYImageTransitionView.swift */,
+				D327D23622C9E5D700A47D28 /* MVYImageTransitionViewController.swift */,
+			);
+			path = ImageTransitionPage;
+			sourceTree = "<group>";
+		};
+		D34EE16422FBF984002AB9DE /* RecordPage */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE16522FBF984002AB9DE /* MVYRecordViewController.swift */,
+				D34EE16622FBF984002AB9DE /* MVYRecordView.swift */,
+				D34EE16722FBF984002AB9DE /* Model */,
+				D34EE16A22FBF984002AB9DE /* View */,
+			);
+			path = RecordPage;
+			sourceTree = "<group>";
+		};
+		D34EE16722FBF984002AB9DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE16822FBF984002AB9DE /* MVYMediaItemModel.swift */,
+				D34EE16922FBF984002AB9DE /* MVYStyleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D34EE16A22FBF984002AB9DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE16B22FBF984002AB9DE /* MVYBeautyPanel.swift */,
+				D34EE16C22FBF984002AB9DE /* MVYSpeedRadioButton.swift */,
+				D34EE16D22FBF984002AB9DE /* MVYRecordProgressView.swift */,
+				D34EE16E22FBF984002AB9DE /* MVYStylePanelCell.swift */,
+				D34EE16F22FBF984002AB9DE /* MVYStylePanel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D34EE17922FC08D8002AB9DE /* MusicPage */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE17A22FC08D8002AB9DE /* Model */,
+				D34EE17C22FC08D8002AB9DE /* View */,
+				D34EE17E22FC08D8002AB9DE /* MVYMusicView.swift */,
+				D34EE17F22FC08D8002AB9DE /* MVYMusicViewController.swift */,
+			);
+			path = MusicPage;
+			sourceTree = "<group>";
+		};
+		D34EE17A22FC08D8002AB9DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE17B22FC08D8002AB9DE /* MVYMusicModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D34EE17C22FC08D8002AB9DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE17D22FC08D8002AB9DE /* MVYMusicCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D34EE18422FC08EC002AB9DE /* EditPage */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE19B22FC08EC002AB9DE /* CoverPage */,
+				D34EE18522FC08EC002AB9DE /* EffectPage */,
+				D34EE19122FC08EC002AB9DE /* Model */,
+				D34EE19322FC08EC002AB9DE /* View */,
+				D34EE19022FC08EC002AB9DE /* MVYEditView.swift */,
+				D34EE19A22FC08EC002AB9DE /* MVYEditViewController.swift */,
+			);
+			path = EditPage;
+			sourceTree = "<group>";
+		};
+		D34EE18522FC08EC002AB9DE /* EffectPage */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE18622FC08EC002AB9DE /* MVYEffectView.swift */,
+				D34EE18722FC08EC002AB9DE /* MVYEffectViewController.swift */,
+				D34EE18822FC08EC002AB9DE /* Model */,
+				D34EE18D22FC08EC002AB9DE /* View */,
+			);
+			path = EffectPage;
+			sourceTree = "<group>";
+		};
+		D34EE18822FC08EC002AB9DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE18922FC08EC002AB9DE /* MVYEffectTimeModel.swift */,
+				D34EE18A22FC08EC002AB9DE /* MVYEffectTimeIndexModel.swift */,
+				D34EE18B22FC08EC002AB9DE /* MVYEffectCellModel.swift */,
+				D34EE18C22FC08EC002AB9DE /* MVYDecoderWorkTypeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D34EE18D22FC08EC002AB9DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE18E22FC08EC002AB9DE /* MVYEffectProgressView.swift */,
+				D34EE18F22FC08EC002AB9DE /* MVYEffectSelectorView.swift */,
+				D3F0DC0D22FFE2C500F5E9AD /* MVYSlowPlayProgressView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D34EE19122FC08EC002AB9DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE19222FC08EC002AB9DE /* MVYImageStickerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D34EE19322FC08EC002AB9DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE19422FC08EC002AB9DE /* MVYSubtitlePanel.swift */,
+				D34EE19522FC08EC002AB9DE /* MVYVolumeEditPanel.swift */,
+				D34EE19622FC08EC002AB9DE /* MVYCutAudioView.swift */,
+				D34EE19722FC08EC002AB9DE /* MVYCutAudioPanel.swift */,
+				D34EE19822FC08EC002AB9DE /* MVYStickerView.swift */,
+				D34EE19922FC08EC002AB9DE /* MVYStickerPanel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D34EE19B22FC08EC002AB9DE /* CoverPage */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE19C22FC08EC002AB9DE /* MVYCoverView.swift */,
+				D34EE19D22FC08EC002AB9DE /* MVYCoverViewController.swift */,
+			);
+			path = CoverPage;
+			sourceTree = "<group>";
+		};
+		D34EE1B122FC08F9002AB9DE /* OutputPage */ = {
+			isa = PBXGroup;
+			children = (
+				D34EE1B222FC08F9002AB9DE /* MVYOutputView.swift */,
+				D34EE1B322FC08F9002AB9DE /* MVYOutputViewController.swift */,
+			);
+			path = OutputPage;
+			sourceTree = "<group>";
+		};
+		D3D69C8D2266C42B005F82EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3D69C912266C42B005F82EF /* MVYEffectHandler.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3E8CF7B229A97110086B289 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3E8CF7F229A97110086B289 /* MVYMagicShader.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3E9897321F448A5001EE5FB = {
+			isa = PBXGroup;
+			children = (
+				D3E9897E21F448A5001EE5FB /* MVYShortVideoEditorIOS */,
+				D3E9897D21F448A5001EE5FB /* Products */,
+				0A1B5686E572A95F431ABA12 /* Pods */,
+				A51F41C1AE3C30FA085ADF0F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3E9897D21F448A5001EE5FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3E9897C21F448A5001EE5FB /* MVYShortVideoEditorIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3E9897E21F448A5001EE5FB /* MVYShortVideoEditorIOS */ = {
+			isa = PBXGroup;
+			children = (
+				D3E8CF7A229A97110086B289 /* MVYMagicShader.xcodeproj */,
+				D34A3C7B22641F4B00EDED53 /* MVYMediaDecoder.xcodeproj */,
+				D3D69C8C2266C42B005F82EF /* MVYEffectHandler.xcodeproj */,
+				D3D69CAA2266CB85005F82EF /* EffectHandler.bundle */,
+				D3E9899121F44B6E001EE5FB /* Page */,
+				D3E9899921F44F73001EE5FB /* CustomUI */,
+				D325672121F6053D007711F6 /* RecordTool */,
+				D325676621F8AE00007711F6 /* Resources */,
+				D3E9897F21F448A5001EE5FB /* AppDelegate.swift */,
+				D3E9898121F448A5001EE5FB /* ViewController.swift */,
+				D325672221F60566007711F6 /* MVYShortVideoEditorIOS-Bridging-Header.h */,
+				D3E9898621F448A6001EE5FB /* Assets.xcassets */,
+				D3E9898821F448A6001EE5FB /* LaunchScreen.storyboard */,
+				D3E9898B21F448A6001EE5FB /* Info.plist */,
+			);
+			path = MVYShortVideoEditorIOS;
+			sourceTree = "<group>";
+		};
+		D3E9899121F44B6E001EE5FB /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				D3E9899221F44B74001EE5FB /* InputPage */,
+				D34EE16422FBF984002AB9DE /* RecordPage */,
+				D34EE17922FC08D8002AB9DE /* MusicPage */,
+				D34EE18422FC08EC002AB9DE /* EditPage */,
+				D34EE1B122FC08F9002AB9DE /* OutputPage */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		D3E9899221F44B74001EE5FB /* InputPage */ = {
+			isa = PBXGroup;
+			children = (
+				D327D23222C9BC2100A47D28 /* ImageTransitionPage */,
+				D31CB812227EC082004AE345 /* CutMoviePage */,
+				D3E9899521F44BA8001EE5FB /* MVYInputView.swift */,
+				D3E9899321F44B92001EE5FB /* MVYInputViewController.swift */,
+			);
+			path = InputPage;
+			sourceTree = "<group>";
+		};
+		D3E9899921F44F73001EE5FB /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				D31CB819227EC980004AE345 /* RangeSeekSlider */,
+				D3E9899A21F44F91001EE5FB /* MVYRadioButton.swift */,
+				D3E9899C21F450AB001EE5FB /* ExtensionUIButton.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3E9897B21F448A5001EE5FB /* MVYShortVideoEditorIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E9898E21F448A6001EE5FB /* Build configuration list for PBXNativeTarget "MVYShortVideoEditorIOS" */;
+			buildPhases = (
+				15EB93935C8A1DE46B1CDBA4 /* [CP] Check Pods Manifest.lock */,
+				D3E9897821F448A5001EE5FB /* Sources */,
+				D3E9897921F448A5001EE5FB /* Frameworks */,
+				D3E9897A21F448A5001EE5FB /* Resources */,
+				6EA429B476426BBEFB631611 /* [CP] Embed Pods Frameworks */,
+				D368060D226F32BF009C1F1B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3C19358229E313E00B4C3B7 /* PBXTargetDependency */,
+				D3D69CA32266C4A9005F82EF /* PBXTargetDependency */,
+				D3D69CA82266C4AD005F82EF /* PBXTargetDependency */,
+				D368060C226F32BF009C1F1B /* PBXTargetDependency */,
+				D3680611226F32C1009C1F1B /* PBXTargetDependency */,
+				D3C1935D229E314400B4C3B7 /* PBXTargetDependency */,
+			);
+			name = MVYShortVideoEditorIOS;
+			productName = MVYShortVideoEditorIOS;
+			productReference = D3E9897C21F448A5001EE5FB /* MVYShortVideoEditorIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3E9897421F448A5001EE5FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = myvideoyun;
+				TargetAttributes = {
+					D3E9897B21F448A5001EE5FB = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = D3E9897721F448A5001EE5FB /* Build configuration list for PBXProject "MVYShortVideoEditorIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3E9897321F448A5001EE5FB;
+			productRefGroup = D3E9897D21F448A5001EE5FB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D3D69C8D2266C42B005F82EF /* Products */;
+					ProjectRef = D3D69C8C2266C42B005F82EF /* MVYEffectHandler.xcodeproj */;
+				},
+				{
+					ProductGroup = D3E8CF7B229A97110086B289 /* Products */;
+					ProjectRef = D3E8CF7A229A97110086B289 /* MVYMagicShader.xcodeproj */;
+				},
+				{
+					ProductGroup = D32327A1226432A600F6BC51 /* Products */;
+					ProjectRef = D34A3C7B22641F4B00EDED53 /* MVYMediaDecoder.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D3E9897B21F448A5001EE5FB /* MVYShortVideoEditorIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D32327A5226432A600F6BC51 /* MVYMediaDecoder.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MVYMediaDecoder.framework;
+			remoteRef = D32327A4226432A600F6BC51 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3D69C912266C42B005F82EF /* MVYEffectHandler.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MVYEffectHandler.framework;
+			remoteRef = D3D69C902266C42B005F82EF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3E8CF7F229A97110086B289 /* MVYMagicShader.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MVYMagicShader.framework;
+			remoteRef = D3E8CF7E229A97110086B289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3E9897A21F448A5001EE5FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D325676821F8AE13007711F6 /* FilterResources in Resources */,
+				D3E9898A21F448A6001EE5FB /* LaunchScreen.storyboard in Resources */,
+				D30C35B522A8B1CF009A168F /* TimeEffectResources in Resources */,
+				D3E8CF2B229812190086B289 /* VideoEffectResources in Resources */,
+				D3E9898721F448A6001EE5FB /* Assets.xcassets in Resources */,
+				D31CB83022813AD8004AE345 /* AlanWalker-Alone.m4a in Resources */,
+				D3D69CAB2266CB85005F82EF /* EffectHandler.bundle in Resources */,
+				D31CB83122813AD8004AE345 /* AlanWalker-TheSpectre.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15EB93935C8A1DE46B1CDBA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVYShortVideoEditorIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EA429B476426BBEFB631611 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVYShortVideoEditorIOS/Pods-MVYShortVideoEditorIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVYShortVideoEditorIOS/Pods-MVYShortVideoEditorIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVYShortVideoEditorIOS/Pods-MVYShortVideoEditorIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3E9897821F448A5001EE5FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E9899421F44B92001EE5FB /* MVYInputViewController.swift in Sources */,
+				D34EE1AD22FC08EC002AB9DE /* MVYStickerPanel.swift in Sources */,
+				D31CB814227EC0FB004AE345 /* MVYCutMovieViewController.swift in Sources */,
+				D34EE1A922FC08EC002AB9DE /* MVYVolumeEditPanel.swift in Sources */,
+				D34EE17522FBF984002AB9DE /* MVYSpeedRadioButton.swift in Sources */,
+				D34EE17622FBF984002AB9DE /* MVYRecordProgressView.swift in Sources */,
+				D34EE18022FC08D8002AB9DE /* MVYMusicModel.swift in Sources */,
+				D34EE1A722FC08EC002AB9DE /* MVYImageStickerModel.swift in Sources */,
+				D34EE1A122FC08EC002AB9DE /* MVYEffectTimeIndexModel.swift in Sources */,
+				D34EE18222FC08D8002AB9DE /* MVYMusicView.swift in Sources */,
+				D34EE1AB22FC08EC002AB9DE /* MVYCutAudioPanel.swift in Sources */,
+				D325673921F60965007711F6 /* MVYAudioMixEffect.m in Sources */,
+				D34EE17222FBF984002AB9DE /* MVYMediaItemModel.swift in Sources */,
+				D34EE1A522FC08EC002AB9DE /* MVYEffectSelectorView.swift in Sources */,
+				D34EE19E22FC08EC002AB9DE /* MVYEffectView.swift in Sources */,
+				D34EE19F22FC08EC002AB9DE /* MVYEffectViewController.swift in Sources */,
+				D34EE1A822FC08EC002AB9DE /* MVYSubtitlePanel.swift in Sources */,
+				D34EE17322FBF984002AB9DE /* MVYStyleModel.swift in Sources */,
+				D3E9899621F44BA8001EE5FB /* MVYInputView.swift in Sources */,
+				D327D23722C9E5D700A47D28 /* MVYImageTransitionViewController.swift in Sources */,
+				D31CB816227EC108004AE345 /* MVYCutMovieView.swift in Sources */,
+				D34EE1A322FC08EC002AB9DE /* MVYDecoderWorkTypeModel.swift in Sources */,
+				D34EE1B522FC08F9002AB9DE /* MVYOutputViewController.swift in Sources */,
+				D34EE1A622FC08EC002AB9DE /* MVYEditView.swift in Sources */,
+				D34EE1B422FC08F9002AB9DE /* MVYOutputView.swift in Sources */,
+				D31CB81D227EC9A4004AE345 /* RangeSeekSlider.swift in Sources */,
+				D34EE17722FBF984002AB9DE /* MVYStylePanelCell.swift in Sources */,
+				D34EE18122FC08D8002AB9DE /* MVYMusicCellView.swift in Sources */,
+				D3E9899B21F44F91001EE5FB /* MVYRadioButton.swift in Sources */,
+				D38E7E92228C4054003851F3 /* MVYAudioAveragePower.m in Sources */,
+				D327D23922C9E5E600A47D28 /* MVYImageTransitionView.swift in Sources */,
+				D34EE1A222FC08EC002AB9DE /* MVYEffectCellModel.swift in Sources */,
+				D3E9899D21F450AB001EE5FB /* ExtensionUIButton.swift in Sources */,
+				D34EE17422FBF984002AB9DE /* MVYBeautyPanel.swift in Sources */,
+				D3CEE91C2289917900316CED /* MVYAudioTracker.m in Sources */,
+				D31CB81E227EC9A4004AE345 /* TapticEngine.swift in Sources */,
+				D327D23B22CA03D400A47D28 /* MVYImageTransition.swift in Sources */,
+				D34EE17022FBF984002AB9DE /* MVYRecordViewController.swift in Sources */,
+				D325672D21F60568007711F6 /* MVYMediaWriter.m in Sources */,
+				D325672F21F60568007711F6 /* MVYCamera.m in Sources */,
+				D34EE1A422FC08EC002AB9DE /* MVYEffectProgressView.swift in Sources */,
+				D34EE1A022FC08EC002AB9DE /* MVYEffectTimeModel.swift in Sources */,
+				D31CB81F227EC9A4004AE345 /* RangeSeekSliderDelegate.swift in Sources */,
+				D34EE1AE22FC08EC002AB9DE /* MVYEditViewController.swift in Sources */,
+				D325673821F60965007711F6 /* MVYAudioTempoEffect.m in Sources */,
+				D34EE18322FC08D8002AB9DE /* MVYMusicViewController.swift in Sources */,
+				D34EE17822FBF984002AB9DE /* MVYStylePanel.swift in Sources */,
+				D34EE1B022FC08EC002AB9DE /* MVYCoverViewController.swift in Sources */,
+				D34EE1AC22FC08EC002AB9DE /* MVYStickerView.swift in Sources */,
+				D3E9898221F448A5001EE5FB /* ViewController.swift in Sources */,
+				D34EE1AF22FC08EC002AB9DE /* MVYCoverView.swift in Sources */,
+				D3F0DC0E22FFE2C500F5E9AD /* MVYSlowPlayProgressView.swift in Sources */,
+				D34EE1AA22FC08EC002AB9DE /* MVYCutAudioView.swift in Sources */,
+				D34EE17122FBF984002AB9DE /* MVYRecordView.swift in Sources */,
+				D3E9898021F448A5001EE5FB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D368060C226F32BF009C1F1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MVYMediaDecoder;
+			targetProxy = D368060B226F32BF009C1F1B /* PBXContainerItemProxy */;
+		};
+		D3680611226F32C1009C1F1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MVYEffectHandler;
+			targetProxy = D3680610226F32C1009C1F1B /* PBXContainerItemProxy */;
+		};
+		D3C19358229E313E00B4C3B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MVYMagicShader;
+			targetProxy = D3C19357229E313E00B4C3B7 /* PBXContainerItemProxy */;
+		};
+		D3C1935D229E314400B4C3B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MVYMagicShader;
+			targetProxy = D3C1935C229E314400B4C3B7 /* PBXContainerItemProxy */;
+		};
+		D3D69CA32266C4A9005F82EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MVYMediaDecoder;
+			targetProxy = D3D69CA22266C4A9005F82EF /* PBXContainerItemProxy */;
+		};
+		D3D69CA82266C4AD005F82EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MVYEffectHandler;
+			targetProxy = D3D69CA72266C4AD005F82EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3E9898821F448A6001EE5FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3E9898921F448A6001EE5FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3E9898C21F448A6001EE5FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3E9898D21F448A6001EE5FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3E9898F21F448A6001EE5FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3D404A1C10127712E891CC /* Pods-MVYShortVideoEditorIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XF7HNQXZKK;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/pop\"",
+				);
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/MediaDecoder/MediaDecoder/ffmpeg/include\"";
+				INFOPLIST_FILE = MVYShortVideoEditorIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MVYShortVideoEditorIOS/FFmpeg/lib",
+					"$(PROJECT_DIR)/MediaDecoder/MediaDecoder/ffmpeg/lib",
+					"$(PROJECT_DIR)/MediaDecoder/MediaDecoder/x264/lib",
+					"$(PROJECT_DIR)/MagicShader/MVYMagicShader/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.ShortVideoEditorIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MVYShortVideoEditorIOS/MVYShortVideoEditorIOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		D3E9899021F448A6001EE5FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 489B819942F99A23CDDFE731 /* Pods-MVYShortVideoEditorIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XF7HNQXZKK;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/pop\"",
+				);
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/MediaDecoder/MediaDecoder/ffmpeg/include\"";
+				INFOPLIST_FILE = MVYShortVideoEditorIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MVYShortVideoEditorIOS/FFmpeg/lib",
+					"$(PROJECT_DIR)/MediaDecoder/MediaDecoder/ffmpeg/lib",
+					"$(PROJECT_DIR)/MediaDecoder/MediaDecoder/x264/lib",
+					"$(PROJECT_DIR)/MagicShader/MVYMagicShader/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.ShortVideoEditorIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MVYShortVideoEditorIOS/MVYShortVideoEditorIOS-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3E9897721F448A5001EE5FB /* Build configuration list for PBXProject "MVYShortVideoEditorIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E9898C21F448A6001EE5FB /* Debug */,
+				D3E9898D21F448A6001EE5FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E9898E21F448A6001EE5FB /* Build configuration list for PBXNativeTarget "MVYShortVideoEditorIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E9898F21F448A6001EE5FB /* Debug */,
+				D3E9899021F448A6001EE5FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3E9897421F448A5001EE5FB /* Project object */;
+}
