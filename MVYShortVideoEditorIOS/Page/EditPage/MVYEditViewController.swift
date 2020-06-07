@@ -114,7 +114,10 @@ extension MVYEditViewController {
             mediaPlayer?.startReversePlay()
             
         case .slow:
-            mediaPlayer?.startSlowPlay(withSlowTime: decoderWorkType.slowDecoderRange)
+            mediaPlayer?.startSlowPlay(withSeekTime: 0, slowTime: NSMakeRange(0, 500));
+            
+        case .fast:
+            mediaPlayer?.startFastPlay(withSeekTime: 0, slowTime: NSMakeRange(0, 500));
         }
         
         if #available(iOS 10.0, *) { // 打开扬声器

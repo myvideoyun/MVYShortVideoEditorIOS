@@ -92,7 +92,7 @@ class MVYEffectViewController: UIViewController {
         // 显示第一帧
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
             switch self.decoderWorkType.type {
-            case .normal, .slow:
+            case .normal, .slow, .fast:
                 self.videoSeeker?.setSeekTime(0)
             case .reverse:
                 self.videoSeeker?.setSeekTime(self.totalDuration)
@@ -201,6 +201,7 @@ extension MVYEffectViewController {
     func play(startTime: Int64) {
         switch decoderWorkType.type {
         case .normal:
+            NSLog("Normal Playing");
             videoPlayer?.startPlay(withSeekTime: startTime)
             
         case .reverse:
@@ -208,6 +209,9 @@ extension MVYEffectViewController {
         
         case .slow:
             videoPlayer?.startSlowPlay(withSeekTime: startTime, slowTime: decoderWorkType.slowDecoderRange)
+            
+        case .fast:
+            videoPlayer?.startFastPlay(withSeekTime: startTime, slowTime: decoderWorkType.slowDecoderRange)
         }
     }
     
@@ -430,6 +434,11 @@ extension MVYEffectViewController {
             if let setDecoderWorkTypeBlock = self.setDecoderWorkTypeBlock {
                 setDecoderWorkTypeBlock(self.decoderWorkType)
             }
+        } else if effectCell.effectType == -4 {
+            decoderWorkType.type = .fast
+            if let setDecoderWorkTypeBlock = self.setDecoderWorkTypeBlock {
+                setDecoderWorkTypeBlock(self.decoderWorkType)
+            }
         }
         
         effectView!.update(decoderWorkType: decoderWorkType)
@@ -524,6 +533,14 @@ extension MVYEffectViewController {
         data3.effectColor = UIColor.init(red: 0x7c/0xff, green: 0xcf/0xff, blue: 0x30/0xff, alpha: 1)
         datas.append(data3)
 
+        let data4 = MVYEffectCellModel()
+        data4.thumbnail = "\(Bundle.main.bundlePath)/TimeEffectResources/icon/慢动作@2x.png"
+        data4.selectedThumbnail = "\(Bundle.main.bundlePath)/TimeEffectResources/icon/慢动作_selected@2x.png"
+        data4.text = "快动作"
+        data4.effectType = -4
+        data4.effectColor = UIColor.init(red: 0x7c/0xff, green: 0xcf/0xff, blue: 0x30/0xff, alpha: 1)
+        datas.append(data4)
+        
         return datas
     }
 }

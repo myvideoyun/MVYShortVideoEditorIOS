@@ -74,7 +74,7 @@ static NSString *TAG = @"VideoPlayer";
     _framesQueue = [[MVYBlockingQueue alloc] initWithCapacity:1];
 
     // 开始解码
-    [_videoDecoder startDecodeWithSeekTime:seekTime];
+    [_videoDecoder startDecodeWithSeekTime:seekTime withSpeed:1.0f];
     
     // 播放解码出来的视频帧
     [self loopPlayDecoderFrame];
@@ -110,7 +110,20 @@ static NSString *TAG = @"VideoPlayer";
     _framesQueue = [[MVYBlockingQueue alloc] initWithCapacity:1];
     
     // 开始解码
-    [_videoDecoder startSlowDecodeWithSeekTime:seekTime slowTimeRange:slowTimeRange];
+    [_videoDecoder startDecodeWithSeekTime:seekTime withSpeed:2.0];
+    
+    // 播放解码出来的视频帧
+    [self loopPlayDecoderFrame];
+}
+
+- (void)startFastPlayWithSeekTime:(int64_t)seekTime slowTimeRange:(NSRange)slowTimeRange {
+    _seekTime = seekTime;
+    
+    // 设置缓存数据量
+    _framesQueue = [[MVYBlockingQueue alloc] initWithCapacity:1];
+    
+    // 开始解码
+    [_videoDecoder startDecodeWithSeekTime:seekTime withSpeed:0.5];
     
     // 播放解码出来的视频帧
     [self loopPlayDecoderFrame];
@@ -179,7 +192,7 @@ static NSString *TAG = @"VideoPlayer";
                 return;
             }
             
-            NSLog(@"%@ 播放一帧 globalPts : %d duration : %d globalLength : %d offset : %d", TAG, frame.globalPts, frame.duration, frame.offset, frame.globalLength);
+            //NSLog(@"%@ 播放一帧 globalPts : %d duration : %d globalLength : %d offset : %d", TAG, frame.globalPts, frame.duration, frame.offset, frame.globalLength);
             
             if (self.playerFirstFrameTime == 0) {
                 _playerFirstFrameTime = [NSDate date].timeIntervalSince1970 * 1000 - _seekTime;

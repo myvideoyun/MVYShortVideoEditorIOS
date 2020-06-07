@@ -184,7 +184,7 @@ class MVYEffectView: UIView {
         switch decoderWorkType.type {
         case .normal, .reverse:
             slowPlayProgressView(isHidden: true)
-        case .slow:
+        case .slow, .fast:
             slowPlayProgressView(isHidden: false)
             slowPlayProgressView?.update(decoderWorkType: decoderWorkType)
         }

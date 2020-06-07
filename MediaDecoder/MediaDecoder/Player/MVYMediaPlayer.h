@@ -66,6 +66,9 @@
 - (void)startSlowPlayWithSeekTime:(int64_t)seekTime slowTimeRange:(NSRange)slowTimeRange;
 - (void)startSlowPlayWithSlowTimeRange:(NSRange)slowTimeRange;
 
+// start play fast
+- (void)startFastPlayWithSeekTime:(int64_t)seekTime slowTimeRange:(NSRange)slowTimeRange;
+
 // 停止播放
 - (void)stopPlay;
 

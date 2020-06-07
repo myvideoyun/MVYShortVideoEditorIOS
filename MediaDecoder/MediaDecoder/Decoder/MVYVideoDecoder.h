@@ -57,8 +57,8 @@
 - (void)destroyNativeVideoDecoder;
 
 // 从指定时间开始解码
-- (void)startDecodeWithSeekTime:(int64_t)seekTime;
-- (void)startDecodeWithSeekTime:(int64_t)seekTime handleVideoFrame:(MVYVideoFrame *(^)(MVYVideoFrame *))handleVideoFrame;
+- (void)startDecodeWithSeekTime:(int64_t)seekTime withSpeed:(float)speed;
+- (void)startDecodeWithSeekTime:(int64_t)seekTime handleVideoFrame:(MVYVideoFrame *(^)(MVYVideoFrame *))handleVideoFrame withSpeed:(float)speed;
 
 // 停止解码器
 - (void)stopDecoder;

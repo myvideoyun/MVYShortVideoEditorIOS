@@ -100,6 +100,23 @@
             "\"%@\"", inputAudioPath, volume, outputAudioPath];
 }
 
++ (NSString *)adjustSpeedCMDWithSpeed:(NSString *)speed inputAudioPath:(NSString *)inputAudioPath outputAudioPath:(NSString *)outputAudioPath{
+    return [NSString stringWithFormat:@"ffmpeg -threads 4 "
+            "-i \"%@\" "
+            "-filter:a \"atempo=%@\" "
+            "-acodec pcm_s16le "
+            "-ac 1 "
+            "-ar 44100 "
+            "\"%@\"", inputAudioPath, speed, outputAudioPath];
+}
+
++ (NSString *)exportGifCMDWithInputVideoPath:(NSString *)inputVideoPath outputGifPath:(NSString *)outputGifPath{
+    return [NSString stringWithFormat:@"ffmpeg -threads 4 -ss 0 -t 2 "
+            "-i \"%@\" "
+            "-vf \"fps=5,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse\" "
+            "\"%@\"", inputVideoPath, outputGifPath];
+}
+
 // 拼接音频
 + (NSString *)concatAudioCMDWithInputAudioPath:(NSArray<NSString *> *)inputAudioPath outputAudioPath:(NSString *)outputAudioPath {
     NSMutableString *inputMS = [[NSMutableString alloc] init];
